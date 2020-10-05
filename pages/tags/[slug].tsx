@@ -53,7 +53,7 @@ type Params = {
 export async function getStaticProps({ params }: Params) {
   return {
     props: {
-      tag: params.slug,
+      tag: params.slug.split('-').join(' '),
       posts: getAllPostExcerpts({ byTag: params.slug }),
     },
   };

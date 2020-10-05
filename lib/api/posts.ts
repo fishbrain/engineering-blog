@@ -1,5 +1,6 @@
 import { join } from "path";
 import readingTime from "reading-time";
+import slugify from "slugify";
 
 import { IPost, IPostExcerpt } from "../../types/post";
 import { getAuthorExcerptBySlug } from "./authors";
@@ -76,5 +77,5 @@ export function getAllTagSlugs(): string[] {
     return [...tags, ...(data.tags || [])];
   }, [] as string[]);
 
-  return [...new Set(tags)].map(slug => slug.toLowerCase());
+  return [...new Set(tags)].map(tag => slugify(tag, { lower: true }));
 }
