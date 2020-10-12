@@ -24,7 +24,6 @@ function readPostData(slug: string) {
 
 export function getPostBySlug(slug: string): IPost {
   const { data, content } = readPostData(slug);
-
   return {
     slug,
     content,
