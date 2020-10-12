@@ -103,16 +103,16 @@ function createPost() {
           },
         },
         {
-          name: "description",
+          name: "subtitle",
           message:
             "Post subtitle/excerpt (optional - if not entered the first 160 chars of the post will be the excerpt):",
         },
       ])
-      .then(({ title, description }) => {
+      .then(({ title, subtitle }) => {
         const content = `---
 title: "${title}"
 date: "${new Date().toISOString()}"
-description: "${description}"
+subtitle: "${subtitle}"
 imageSrc:
 imageAlt:
 author: ${author}

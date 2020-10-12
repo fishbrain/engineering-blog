@@ -25,14 +25,14 @@ const Tag = ({ tag, posts }: Props) => {
       <Container>
         <Header />
         {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
+          <PostTitle title="Loading..." />
         ) : (
           <>
             <article className="mb-32">
               <Head>
                 <title>{tag} | Fishbrain Tech Blog</title>
               </Head>
-              <PostTitle>{tag}</PostTitle>
+              <PostTitle title={tag} />
               <PostList posts={posts} />
             </article>
           </>

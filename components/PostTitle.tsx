@@ -1,15 +1,19 @@
-import { ReactNode } from 'react'
+import { ReactNode } from "react";
 
-type Props = {
-  children?: ReactNode
+interface Props {
+  title: string;
+  subtitle?: string | null;
 }
 
-const PostTitle = ({ children }: Props) => {
+const PostTitle = ({ title, subtitle }: Props) => {
   return (
-    <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
-      {children}
-    </h1>
-  )
-}
+    <div className="tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
+        {title}
+      </h1>
+      {subtitle && <p className="mt-6 text-lg">{subtitle}</p>}
+    </div>
+  );
+};
 
-export default PostTitle
+export default PostTitle;

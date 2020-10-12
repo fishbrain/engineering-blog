@@ -16,7 +16,7 @@ export const PostList = ({ posts }: IProps): JSX.Element => (
         date={post.date}
         author={post.author}
         slug={post.slug}
-        excerpt={post.description}
+        excerpt={post.subtitle || post.excerpt}
         readingTime={post.readingTime}
       />
     ))}
