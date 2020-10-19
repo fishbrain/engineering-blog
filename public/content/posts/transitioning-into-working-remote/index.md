@@ -42,7 +42,7 @@ One of the things my team immediately missed from the office was our “Wall of 
 
 This is another case where Gsuite and Google cover our backs, and we found out about this feature from [Thoughtbot’s most recent blog post on remote working](https://thoughtbot.com/blog/remote-tools-and-tips-in-these-remote-times): Google Jamboard. Open Google Drive, tap + *New*, *More* and then *Google Jamboard*.
 
-![1_cnV7TnS4DDvwCU8y0MIMuA.png](Our online version of the wall of promises.)
+![Our online version of the wall of promises.](1_cnV7TnS4DDvwCU8y0MIMuA.png)
 
 ## Music and background noise
 
