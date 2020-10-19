@@ -27,7 +27,7 @@ Back at the drawing table, we investigated if there wasn’t already a readymade
 
 The solution we then found might bring up memories from school. Working in trigonometry and calculating angles, length of circular sectors, converting degrees to radians and more.
 
-![A set of points (red), and their approximate center point (blue).](/1_0953CS2OdhKHNgmIAuN6IA.png)
+![A set of points (red), and their approximate center point (blue).](1_0953CS2OdhKHNgmIAuN6IA.png)
 
 The approach we decided upon takes a bit more explaining. For the sake of keeping things sane in our examples, we’ll reduce the number of dimensions from three to two. Therefore, a point on a sphere will in our explanation be represented by a point on a circle.
 
