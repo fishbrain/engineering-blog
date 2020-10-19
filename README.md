@@ -57,6 +57,19 @@ tags:
 ---
 ```
 
+### Adding iframes/embeds
+
+We use a custom syntax for embedding iframes (e.g. Youtube videos, etc.). Simply paste the url
+between two blank lines:
+
+```markdown
+
+https://www.youtube.com/embed/5qap5aO4i9A
+
+```
+
+Domains must be whitelisted in [lib/markdownToHtml.ts](lib/markdownToHtml.ts).
+
 ## What's missing
 
 This project's intent is to migrate our Engineering blog from Medium to our own self-run blog. Currently
@@ -65,3 +78,4 @@ we're missing the following capabilities:
 - can't bold text in code snippets (see https://medium.com/fishbrain/graphql-fragments-are-amazing-1458d81fc5f)
 - Inline images (see https://medium.com/fishbrain/graphql-fragments-are-amazing-1458d81fc5f)
 - Comments. We can probably add disqus pretty easily.
+- URL embeds like seen for "Noisli" in this article https://medium.com/fishbrain/transitioning-into-working-remote-3dbba1c26aac
