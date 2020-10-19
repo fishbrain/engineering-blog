@@ -48,13 +48,13 @@ This is another case where Gsuite and Google cover our backs, and we found out a
 
 Working from home can sometimes remind you just how deafening silence can be. Playing some non-distractive music like some smooth jazz can be helpful. One of our teammates share this stream with some nice beats, perfect to play in the background:
 
-https://www.youtube.com/embed/5qap5aO4i9A
+?[](https://www.youtube.com/embed/5qap5aO4i9A)
 
 I’ve also enjoyed having some background noise playing in the background. One great source for that is the website [Noisli.com](https://www.noisli.com/). A nice mix of rain, thunder, and wind is my favorite. It makes it feel like you’re away in a cozy cabin somewhere.
 
 The modular synth artist Colin Benders has also been streaming some live sessions while he is in self isolation. Also perfect to have playing in the background. Tune into his third session below, or find more on his [Youtube channel](https://www.youtube.com/channel/UCx74vAHCehhLOeQNwbJcGyQ).
 
-https://www.youtube.com/embed/r023qzhuoqE
+?[](https://www.youtube.com/embed/r023qzhuoqE)
 
 ## Remote fika
 

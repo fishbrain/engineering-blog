@@ -59,12 +59,15 @@ tags:
 
 ### Adding iframes/embeds
 
-We use a custom syntax for embedding iframes (e.g. Youtube videos, etc.). Simply paste the url
-between two blank lines:
+We use a custom syntax for embedding iframes (e.g. Youtube videos, etc.):
 
 ```markdown
 
-https://www.youtube.com/embed/5qap5aO4i9A
+<!-- with a caption -->
+?[Here's my video](https://www.youtube.com/embed/5qap5aO4i9A)
+
+<!-- without a caption -->
+?[](https://www.youtube.com/embed/5qap5aO4i9A)
 
 ```
 
@@ -81,3 +84,7 @@ we're missing the following capabilities:
 - URL embeds like seen for "Noisli" in this article https://medium.com/fishbrain/transitioning-into-working-remote-3dbba1c26aac
 - Cant have urls in image caption/alt E.g. ![An illustration of a sphere with its three axis. Sourced from Wikipedia.](1_bKy1EAZynH-oAGVDOndRoQ.png) - the wikipedia part should be linkable.
 - Cant embed Gists (see https://medium.com/fishbrain/finding-the-center-point-in-a-cluster-of-coordinates-e607cdf75fd5)
+
+## Known issues
+
+- Sometimes images will appear missing in the dev environment. If this happens just restart the dev server.

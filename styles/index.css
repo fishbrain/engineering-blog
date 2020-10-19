@@ -16,6 +16,10 @@ blockquote {
   @apply ml-4 pl-4 border-gray-400 border-l-4
 }
 
+figcaption {
+  @apply text-center italic py-2
+}
+
 ul {
   @apply list-inside list-disc
 }
