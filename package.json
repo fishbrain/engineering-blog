@@ -36,6 +36,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-toggle": "^4.0.2",
     "postcss-preset-env": "^6.7.0",
+    "serverless": "^2.8.0",
     "tailwindcss": "^1.4.0"
   },
   "license": "MIT"

@@ -1,0 +1,2 @@
+engineeringBlog:
+  component: "@sls-next/serverless-component@1.17.0" # it is recommended you pin the latest stable version of serverless-next.js

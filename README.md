@@ -10,6 +10,11 @@ Run:
 
 You'll now have a local instance of the blog running at [localhost:3000](localhost:3000);
 
+## Deploying
+
+Everytime a commit is made to the `main` branch, the app is built and deployed to an AWS Lamda using
+[serverless-nextjs](https://github.com/serverless-nextjs/serverless-next.js).
+
 ## Adding a new post
 
 You can add a post by running:

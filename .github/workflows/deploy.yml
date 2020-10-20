@@ -1,0 +1,23 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install packages
+      run: yarn
+    
+    - name: Build
+      run: yarn build
+    
+    - name: Deploy
+      run: yarn serverless
+
