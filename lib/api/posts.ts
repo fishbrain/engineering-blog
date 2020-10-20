@@ -1,5 +1,6 @@
 import { join } from "path";
 import readingTime from "reading-time";
+import slugify from "slugify";
 
 import { IPost, IPostExcerpt } from "../../types/post";
 import { getAuthorExcerptBySlug } from "./authors";
@@ -23,7 +24,6 @@ function readPostData(slug: string) {
 
 export function getPostBySlug(slug: string): IPost {
   const { data, content } = readPostData(slug);
-
   return {
     slug,
     content,
@@ -33,7 +33,8 @@ export function getPostBySlug(slug: string): IPost {
       : null,
     author: getAuthorExcerptBySlug(data.author),
     readingTime: readingTime(content).text,
-    description: data.description || getPostContentExcerpt(content),
+    subtitle: data.subtitle || null,
+    excerpt: getPostContentExcerpt(content),
   } as IPost;
 }
 
@@ -53,7 +54,8 @@ export function getAllPostExcerpts({
         imageSrc: data.imageSrc
           ? join("/content", "posts", slug, data.imageSrc)
           : null,
-        description: data.description || getPostContentExcerpt(content),
+        subtitle: data.subtitle || null,
+        excerpt: getPostContentExcerpt(content),
         readingTime: readingTime(content).text,
         imageAlt: data.imageAlt || null,
         tags: data.tags,
@@ -64,7 +66,9 @@ export function getAllPostExcerpts({
     return posts.filter((p) => p.author.slug === byAuthor);
   }
   if (byTag) {
-    return posts.filter((p) => p.tags && p.tags.map(tag => tag.toLowerCase()).includes(byTag));
+    return posts.filter(
+      (p) => p.tags && p.tags.map((tag) => tag.toLowerCase()).includes(byTag)
+    );
   }
   return posts;
 }
@@ -76,5 +80,5 @@ export function getAllTagSlugs(): string[] {
     return [...tags, ...(data.tags || [])];
   }, [] as string[]);
 
-  return [...new Set(tags)].map(slug => slug.toLowerCase());
+  return [...new Set(tags)].map((tag) => slugify(tag, { lower: true }));
 }

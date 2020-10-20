@@ -26,7 +26,7 @@ const Post = ({ post }: Props) => {
       <Container>
         <Header />
         {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
+          <PostTitle title="Loading..." />
         ) : (
           <>
             <article className="mb-32">
@@ -43,6 +43,7 @@ const Post = ({ post }: Props) => {
                 date={post.date}
                 author={post.author}
                 readingTime={post.readingTime}
+                subtitle={post.subtitle}
               />
               <PostBody content={post.content} tags={post.tags} />
             </article>

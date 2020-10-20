@@ -1,22 +1,31 @@
-import Avatar from './Avatar'
-import DateFormatter from './DateFormatter'
-import CoverImage from './CoverImage'
-import PostTitle from './PostTitle'
-import { IAuthorExcerpt } from '../types/author'
+import Avatar from "./Avatar";
+import DateFormatter from "./DateFormatter";
+import CoverImage from "./CoverImage";
+import PostTitle from "./PostTitle";
+import { IAuthorExcerpt } from "../types/author";
 
 type Props = {
-  title: string
-  imageSrc?: string | null
-  imageAlt?: string
-  date: string
-  author: IAuthorExcerpt
-  readingTime: string
-}
+  title: string;
+  imageSrc?: string | null;
+  imageAlt?: string;
+  date: string;
+  author: IAuthorExcerpt;
+  readingTime: string;
+  subtitle?: string | null;
+};
 
-const PostHeader = ({ title, imageAlt, imageSrc, date, author, readingTime }: Props) => {
+const PostHeader = ({
+  title,
+  imageAlt,
+  imageSrc,
+  date,
+  author,
+  readingTime,
+  subtitle,
+}: Props) => {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
+      <PostTitle title={title} subtitle={subtitle} />
       <div className="hidden md:block md:mb-12">
         <Avatar author={author} />
       </div>
@@ -32,7 +41,7 @@ const PostHeader = ({ title, imageAlt, imageSrc, date, author, readingTime }: Pr
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default PostHeader
+export default PostHeader;

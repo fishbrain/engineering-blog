@@ -27,7 +27,7 @@ const PostPreview = ({
   readingTime,
 }: Props) => {
   return (
-    <div>
+    <div className="border-b-2 pb-8 mb-10">
       {imageSrc && (
         <div className="mb-5">
           <CoverImage

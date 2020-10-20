@@ -1,7 +1,7 @@
 ---
 title: WWDC Wishlist — Device Color
 date: "2015-05-01T22:12:03.284Z"
-description: "Trick to design your interface with respect to device color"
+subtitle: "Trick to design your interface with respect to device color"
 imageSrc: 1_Htm2L7UYxSz6_NXhZ4CnGw.jpeg
 imageAlt: "Photo by Grysell Alvarez on Unsplash."
 author: emil-bogren

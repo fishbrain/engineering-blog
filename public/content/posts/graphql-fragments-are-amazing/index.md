@@ -2,7 +2,7 @@
 title: GraphQL Fragments are amazing!
 date: "2020-06-05T22:12:03.284Z"
 author: klas-eskilson
-description: "…If you know how to use them."
+subtitle: "…If you know how to use them."
 imageSrc: 1_PyFGuPJdsZVnjrkRdbDMRA.png
 imageAlt: "GraphQL fragments stink; change my mind"
 tags:

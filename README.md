@@ -57,6 +57,27 @@ tags:
 ---
 ```
 
+### Adding iframes/embeds
+
+We use a custom syntax for embedding iframes (e.g. Youtube videos, etc.):
+
+```markdown
+
+<!-- with a caption -->
+?[Here's my video](https://www.youtube.com/embed/5qap5aO4i9A)
+
+<!-- without a caption -->
+?[](https://www.youtube.com/embed/5qap5aO4i9A)
+
+```
+
+Domains must be whitelisted in [lib/markdownToHtml.ts](lib/markdownToHtml.ts).
+
+#### Embedding tweets
+
+Twitter doesn't use iframes by default, but you can utilise [https://twitframe.com/](https://twitframe.com/)
+to embed tweets as iframes in the way described above.
+
 ## What's missing
 
 This project's intent is to migrate our Engineering blog from Medium to our own self-run blog. Currently
@@ -65,3 +86,10 @@ we're missing the following capabilities:
 - can't bold text in code snippets (see https://medium.com/fishbrain/graphql-fragments-are-amazing-1458d81fc5f)
 - Inline images (see https://medium.com/fishbrain/graphql-fragments-are-amazing-1458d81fc5f)
 - Comments. We can probably add disqus pretty easily.
+- URL embeds like seen for "Noisli" in this article https://medium.com/fishbrain/transitioning-into-working-remote-3dbba1c26aac
+- Cant have urls in image caption/alt E.g. ![An illustration of a sphere with its three axis. Sourced from Wikipedia.](1_bKy1EAZynH-oAGVDOndRoQ.png) - the wikipedia part should be linkable.
+- Cant embed Gists (see https://medium.com/fishbrain/finding-the-center-point-in-a-cluster-of-coordinates-e607cdf75fd5)
+
+## Known issues
+
+- Sometimes images will appear missing in the dev environment. If this happens just restart the dev server.

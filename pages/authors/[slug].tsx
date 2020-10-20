@@ -28,14 +28,14 @@ const Authors = ({ author, posts }: Props) => {
       <Container>
         <Header />
         {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
+          <PostTitle title="Loading..." />
         ) : (
           <>
             <article className="mb-32">
               <Head>
                 <title>{author.name} | Fishbrain Tech Blog</title>
               </Head>
-              <PostTitle>{author.name}</PostTitle>
+              <PostTitle title={author.name} subtitle={author.shortDescription} />
               <PostList posts={posts} />
             </article>
           </>
