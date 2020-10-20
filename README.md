@@ -73,6 +73,11 @@ We use a custom syntax for embedding iframes (e.g. Youtube videos, etc.):
 
 Domains must be whitelisted in [lib/markdownToHtml.ts](lib/markdownToHtml.ts).
 
+#### Embedding tweets
+
+Twitter doesn't use iframes by default, but you can utilise [https://twitframe.com/](https://twitframe.com/)
+to embed tweets as iframes in the way described above.
+
 ## What's missing
 
 This project's intent is to migrate our Engineering blog from Medium to our own self-run blog. Currently

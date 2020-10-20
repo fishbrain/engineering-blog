@@ -4,7 +4,7 @@ import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import mdxPrism from "mdx-prism";
 
-const EMBED_WHITELIST = ["https://www.youtube.com/"];
+const EMBED_WHITELIST = ["https://www.youtube.com/", "https://twitframe.com"];
 const EMBED_TYPE = "embed";
 const EMBED_SYMBOL = "?";
 

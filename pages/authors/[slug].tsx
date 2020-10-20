@@ -35,7 +35,7 @@ const Authors = ({ author, posts }: Props) => {
               <Head>
                 <title>{author.name} | Fishbrain Tech Blog</title>
               </Head>
-              <PostTitle title={author.name} />
+              <PostTitle title={author.name} subtitle={author.shortDescription} />
               <PostList posts={posts} />
             </article>
           </>
