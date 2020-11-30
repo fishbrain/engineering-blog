@@ -15,7 +15,7 @@ const Index = ({ posts }: Props) => {
   return (
     <Layout>
       <Head>
-        <title>Fishbrain Tech Blog</title>
+        <title>Fishbrain Engineering Blog</title>
       </Head>
       <Container>
         <Header isHome />

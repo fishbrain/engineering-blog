@@ -8,7 +8,7 @@ const titleClass =
 const Header = ({ isHome = false }: { isHome?: boolean }) => {
   const title = (
     <Link href="/">
-      <a className="hover:underline">Fishbrain Tech Blog</a>
+      <a className="hover:underline">Fishbrain Engineering Blog</a>
     </Link>
   );
   return (
