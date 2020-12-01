@@ -1,5 +1,5 @@
 {
-  "name": "blog-starter-typescript",
+  "name": "engineering-blog",
   "version": "1.0.0",
   "scripts": {
     "add-post": "./scripts/createPost.js",

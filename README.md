@@ -1,5 +1,7 @@
 # Fishbrain Engineering Blog
 
+This repo contains the code for the [Fishbrain Engineering Blog](https://engineering.fishbrain.com/).
+
 ## Setup
 
 Run:

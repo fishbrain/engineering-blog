@@ -30,7 +30,7 @@ const Tag = ({ tag, posts }: Props) => {
           <>
             <article className="mb-32">
               <Head>
-                <title>{tag} | Fishbrain Tech Blog</title>
+                <title>{tag} | Fishbrain Engineering Blog</title>
               </Head>
               <PostTitle title={tag} />
               <PostList posts={posts} />
