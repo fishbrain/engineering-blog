@@ -17,7 +17,7 @@
     "next": "^9.5.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-toggle": "^4.1.1",
+    "react-toggle": "^4.1.2",
     "reading-time": "^1.2.0",
     "rehype": "^11.0.0",
     "rehype-stringify": "^8.0.0",
