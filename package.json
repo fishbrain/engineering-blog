@@ -9,7 +9,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "classnames": "2.2.6",
+    "classnames": "2.3.1",
     "date-fns": "^2.16.1",
     "gray-matter": "^4.0.3",
     "inquirer": "^7.3.3",
