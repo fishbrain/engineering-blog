@@ -32,9 +32,9 @@
     "@types/classnames": "^2.2.10",
     "@types/jest": "^25.2.2",
     "@types/node": "^16.3.2",
-    "@types/react": "^17.0.13",
+    "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
-    "@types/react-toggle": "^4.0.2",
+    "@types/react-toggle": "^4.0.3",
     "postcss-preset-env": "^6.7.0",
     "serverless": "^2.51.2",
     "tailwindcss": "^1.9.6"
