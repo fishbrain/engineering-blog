@@ -14,7 +14,7 @@
     "gray-matter": "^4.0.3",
     "inquirer": "^7.3.3",
     "mdx-prism": "^0.3.1",
-    "next": "^9.5.5",
+    "next": "^10.0.4",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-toggle": "^4.1.2",
