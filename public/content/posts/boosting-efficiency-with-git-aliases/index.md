@@ -174,7 +174,7 @@ $ git cb my-new-branch
 
 ### Pro Tip
 
-As I already mentioned, lot of the companies like using this kind of branches name `ABC-12345-description-of-the-feature-im-working-on` which is a combination of Jira ticket number and its description. If you are as lazy developer as I am, you probably don't like typing the whole thing manually every time when creating a new branch. Can we automate it? Of course, we can!
+As I already mentioned, lots of companies like using these kind of branch names `ABC-12345-description-of-the-feature-im-working-on` which are a combination of Jira ticket number and its description. If you are as lazy a developer as I am, you probably don't like typing the whole thing manually every time when creating a new branch. Can we automate it? Of course, we can!
 
 The ultimate goal is this:
 
