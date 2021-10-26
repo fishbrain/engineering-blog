@@ -88,7 +88,7 @@ Can you guess what this alias does? Try it on your own!
 
 ### Pro Tip
 
-Most of the companies use some ticket tracking system like Jira and like adding ticket number to each commit message. I probably don't have to elaborate on how boring is typing `ABC-12345:` prefix every time when specifying the commit message. What about automating it?
+Most companies use some ticket tracking system like Jira and like adding ticket number to each commit message. I probably don't have to elaborate on how boring is typing `ABC-12345:` prefix every time when specifying the commit message. What about automating it?
 
 Let's assume this is our branch name: `ABC-12345-description`. We already have the information about the ticket number, so we can parse it and add to the commit message automatically with help of this alias:
 
