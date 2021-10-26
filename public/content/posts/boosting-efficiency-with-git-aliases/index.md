@@ -208,7 +208,7 @@ $ curl \
 	https://your-domain.atlassian.net/rest/api/2/issue/ABC-12345
 ```
 
-Because of this is fetching the whole ticket JSON, and we need only the summary, we would like to filter the response somehow. Quite handy tool for working with this is [jq](https://stedolan.github.io/jq):
+Because this is fetching the whole ticket JSON, and we need only the summary, we would like to filter the response somehow. A quite handy tool for working with this is [jq](https://stedolan.github.io/jq):
 
 ```bash
 $ curl \
