@@ -19,7 +19,7 @@ __Note:__ All aliases in this article have been tested on macOS Big Sur in Bash.
 
 ## How to Configure Aliases
 
-Before we start, I just want to briefly mention how you can add your own Git aliases. They sit in a `.gitconfig` file which is either global or project based file. For most of the aliases makes sense introducing them globally, which can be achieved by couple of different ways. I like the most editing the config file directly:
+Before we start, I just want to briefly mention how you can add your own Git aliases. They sit in a `.gitconfig` file which is either global or project based file. For most of the aliases it makes sense introducing them globally, which can be achieved a couple of different ways. I like editing the config file directly the most:
 
 ```bash
 $ git config --global -e
