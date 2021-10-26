@@ -1,7 +1,7 @@
 ---
 title: "Boosting Efficiency With Git Aliases"
 date: "2021-10-26T11:15:55.150Z"
-subtitle: "We are developers and developers love making their lives easier by automating boring stuff which they need to do every day, couple of times. This article shows how to boost up your efficiency by introducing couple of Git aliases which helps you to automate some of the most used Git tasks."
+subtitle: "We are developers and developers love making their lives easier by automating boring stuff which they need to do every day. This article shows how to boost up your efficiency by introducing a couple of Git aliases which can help you to automate some of the most used Git tasks."
 imageSrc: boost-efficiency.png
 imageAlt: Boost Efficiency Git Commands
 author: knut-holm
