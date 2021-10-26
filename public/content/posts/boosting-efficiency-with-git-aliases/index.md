@@ -39,7 +39,7 @@ $ git v
 git version 2.30.1 (Apple Git-130)
 ``` 
 
-This saves us typing 8 characters every time we want to check Git version! Not the most useful alias ever, but you got an idea about what are aliases for; we are developers and developers love making their lives easier by automating boring stuff which they need to do every day, couple of times. By getting rid of typing unnecessary characters with Git aliases, you can significantly boost your efficiency.
+This saves us typing 8 characters every time we want to check Git version! Not the most useful alias ever, but you got an idea about what are aliases for; we are developers and developers love making their lives easier by automating boring stuff which they need to do multiple times every day. By getting rid of typing unnecessary characters with Git aliases, you can significantly boost your efficiency.
 
 ### Further Reading
 
