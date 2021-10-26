@@ -13,7 +13,7 @@ tags:
 ## Few Words About Git CLI
 
 When I first came across Git many years ago, I installed a graphical tool for clicking on the commands rather than learning properly how to use the CLI as many other developers do. After some time, I got irritated by not being able to perform actions I wanted to do simply by not understanding what was going on under the hood. That was exactly the moment for downloading a copy of [Git Pro book](https://git-scm.com/book/en/v2) and starting to learn Git for real.  
-If you haven't passed that moment yet, I strongly recommend to start with the book and come back to this article once you have finished at least the first two chapters. On the other hand, reading this article first can be a good motivation for learning the Git CLI as well - it may just be quite hard reading for you if have never touched Git CLI before. Whether one way or another, let's dive into on of the most powerful aspect of Git: the aliases.
+If you haven't passed that moment yet, I strongly recommend to start with the book and come back to this article once you have finished at least the first two chapters. On the other hand, reading this article first can be a good motivation for learning the Git CLI as well - it may just be quite hard reading for you if have never touched Git CLI before. Whether one way or another, let's dive into one of the most powerful aspect of Git: the aliases.
 
 __Note:__ All aliases in this article have been tested on macOS Big Sur in Bash.
 
