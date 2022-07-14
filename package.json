@@ -12,7 +12,7 @@
     "classnames": "2.3.1",
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
-    "inquirer": "^9.0.0",
+    "inquirer": "^9.0.1",
     "mdx-prism": "^0.3.1",
     "next": "^12.2.1",
     "react": "^16.14.0",
