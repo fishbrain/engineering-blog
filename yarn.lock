@@ -1762,10 +1762,10 @@ figures@^3.0.0:
   dependencies:
     escape-string-regexp "^1.0.5"
 
-figures@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/figures/-/figures-4.0.1.tgz#27b26609907bc888b3e3b0ef5403643f80aa2518"
-  integrity sha512-rElJwkA/xS04Vfg+CaZodpso7VqBknOYbzi6I76hI4X80RUjkSxO2oAyPmGbuXUppywjqndOrQDl817hDnI++w==
+figures@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/figures/-/figures-5.0.0.tgz#126cd055052dea699f8a54e8c9450e6ecfc44d5f"
+  integrity sha512-ej8ksPF4x6e5wvK9yevct0UCXh8TTFlWGVLlgjZuoBH1HwjIfKE/IdL5mq89sFA7zELi1VhKpmtDnrs7zWyeyg==
   dependencies:
     escape-string-regexp "^5.0.0"
     is-unicode-supported "^1.2.0"
@@ -2298,17 +2298,17 @@ inquirer@^8.2.4:
     through "^2.3.6"
     wrap-ansi "^7.0.0"
 
-inquirer@^9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-9.0.2.tgz#81d830044718528485d7b9f7d47c6d590ccd1a7f"
-  integrity sha512-AqmDHmz3bIe573OiM4svTZzajBzff1xpuzYAimW8gjzW5ncuPllWB8t/GKl+NSuKRJaKyIF2bU2RCx8H1dwqyQ==
+inquirer@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-9.1.1.tgz#e15a12723f4f607d1b4489b56a0ecc7a6965e17d"
+  integrity sha512-hfS9EJ1pVkGNbYKqzdGwMj0Dqosd36Qvxd5pFy4657QT23gmtFTSqoYBisZR75DReeSMWPNa8J0Lf6TQCz8PvA==
   dependencies:
     ansi-escapes "^5.0.0"
     chalk "^5.0.1"
     cli-cursor "^4.0.0"
     cli-width "^4.0.0"
     external-editor "^3.0.3"
-    figures "^4.0.1"
+    figures "^5.0.0"
     lodash "^4.17.21"
     mute-stream "0.0.8"
     ora "^6.1.2"
