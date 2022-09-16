@@ -1,9 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 16
   pre_build:
     commands:
       - curl -fsSL https://raw.githubusercontent.com/fishbrain/aws-codebuild-extras/master/install -o /tmp/aws-install && . /tmp/aws-install
