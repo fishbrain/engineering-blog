@@ -29,7 +29,6 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
-    "@serverless/cli": "^1.6.0",
     "@types/classnames": "^2.3.1",
     "@types/jest": "^29.0.1",
     "@types/node": "^18.7.17",
@@ -37,7 +36,7 @@
     "@types/react-dom": "^18.0.3",
     "@types/react-toggle": "^4.0.3",
     "postcss-preset-env": "^6.7.1",
-    "serverless": "3.22.0",
+    "serverless": "2.72.2",
     "tailwindcss": "^1.9.6"
   },
   "license": "MIT"
