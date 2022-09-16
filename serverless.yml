@@ -1,5 +1,0 @@
-engineeringBlog:
-  component: "@sls-next/serverless-component@3.7.0" # it is recommended you pin the latest stable version of serverless-next.js
-  inputs:
-    bucketName: "fishbrain-engineering-blog"
-    bucketRegion: "eu-west-1"
