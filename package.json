@@ -29,6 +29,7 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
+    "@serverless/cli": "^1.6.0",
     "@types/classnames": "^2.3.1",
     "@types/jest": "^29.0.1",
     "@types/node": "^18.7.17",
