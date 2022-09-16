@@ -14,8 +14,8 @@ You'll now have a local instance of the blog running at [localhost:3000](localho
 
 ## Deploying
 
-Everytime a commit is made to the `main` branch, the app is built and deployed to an AWS Lamda using
-[serverless-nextjs](https://github.com/serverless-nextjs/serverless-next.js).
+Everytime a commit is made to the `main` branch, the app is built using Codebuild and deployed to an
+S3 bucket.
 
 ## Adding a new post
 
