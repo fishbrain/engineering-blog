@@ -26,13 +26,13 @@ So obviously if you're not optimizing for core web vitals, you are definitely in
 
 In the Fishbrain web application, we're doing fine with the FID and CLS scores as you can see in the title image. But the LCP score is quite hight compared to the standard time (2.5s).
 
-![LCP score margin](/lcp.png "LCP Score")
+![LCP score margin](lcp.png "LCP Score")
 
 ### Identifying the LCP of a page
 
 There are a few ways we can identify the LCP of a page. One easy way is to use the Performance Insights tab in Google Chrome. Once you click the "Measure page load" button it will run for a few seconds and then it will show some details related to performance. On the right side of the tab, you will be able to see web vitals and once you hover LCP it will highlight the LCP content of the page.
 
-![Google Chrome Performance Insights](/perf-insight.png "Google Chrome Performance Insights")
+![Google Chrome Performance Insights](perf-insight.png "Google Chrome Performance Insights")
 
 ### Improve the performance of an image
 
@@ -81,10 +81,10 @@ const DynamicCatchesSection = dynamic(async () =>
 ### Results
 
 Before:
-![Lighthouse Performance Desktop Before](/performance.png "Lighthouse Performance Desktop Before")
+![Lighthouse Performance Desktop Before](performance.png "Lighthouse Performance Desktop Before")
 
 After:
-![Lighthouse Performance Desktop After](/performance-2.png "Lighthouse Performance Desktop After")
+![Lighthouse Performance Desktop After](performance-2.png "Lighthouse Performance Desktop After")
 As you can see, our performance is quite good and the LCP score in particular has improved a lot compared to the earlier version.
 
 **Note:** _The performance is tested in Lighthouse using Desktop mode. Scores can be different from time to time and for mobile devices this score will be considerably lower since the mobile has fewer resources than Desktop devices._
