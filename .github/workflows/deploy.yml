@@ -32,6 +32,6 @@ jobs:
         if: ${{ success() }}
         run: |
           echo "Deploying production to ${{ secrets.S3_OUTPUT_URL }} from Github environment"
-          echo "... uploading to ${S3_OUTPUT_URL}"
-          aws s3 sync out ${S3_OUTPUT_URL} --delete
+          echo "... uploading to ${{ secrets.S3_OUTPUT_URL }}"
+          aws s3 sync out ${{ secrets.S3_OUTPUT_URL }} --delete
           echo "... done"
