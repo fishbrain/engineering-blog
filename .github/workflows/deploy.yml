@@ -1,0 +1,37 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://engineering.fishbrain.com
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: eu-west-1
+          aws-access-key-id: "${{ secrets.AWS_ACCESS_KEY_ID }}"
+          aws-secret-access-key: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+
+      - name: Install
+        run: yarn
+
+      - name: Build
+        run: yarn build && yarn export
+
+      - name: Deploy
+        if: ${{ success() }}
+        run: |
+          echo "Deploying production to ${{ secrets.S3_OUTPUT_URL }} from Github environment"
+          echo "... uploading to ${S3_OUTPUT_URL}"
+          aws s3 sync out ${S3_OUTPUT_URL} --delete
+          echo "... done"
