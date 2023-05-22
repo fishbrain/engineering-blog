@@ -29,15 +29,15 @@ object AnalyticsDeps {
 
 ## The problem we were solving
 
-In short, it was about updating dependencies. Unfortunately, the buildSrc module was not supported by DependaBot. I explored several interesting solutions, but they either provided an unstable solution or didn't work.
+In short, it was about updating dependencies. Unfortunately, the buildSrc module was not supported by Dependabot. I explored several interesting solutions, but they either provided an unstable solution or didn't work.
 
-- [ReleasesHub](https://github.com/dipien/releases-hub-gradle-plugin) Supports buildSrc, but it is not stable enough. Also, that plugin breaks references on version and require direct access to the Android repository
-- [Gradle Versions Plugin](https://github.com/ben-manes/gradle-versions-plugin) Supports buildSrc, but it only gives us information about available updates. We still need to manually update the dependencies. Has a lot of additional plugins for that plugin, but autoupdate works only with Version Catalog feature
-- [Renovate](https://github.com/apps/renovate) Does not support buildSrc. It is a bot that can update dependencies in the project, but primarily support Version Catalog or default build system.
+- [ReleasesHub](https://github.com/dipien/releases-hub-gradle-plugin) supports buildSrc, but it is not stable enough. It also breaks references on versions and requires direct access to the Android repository
+- [Gradle Versions Plugin](https://github.com/ben-manes/gradle-versions-plugin) supports buildSrc, but it only gives us information about available updates. We would still need to manually update the dependencies. It has a lot of additional plugins, but autoupdate works only with Version Catalog feature.
+- [Renovate](https://github.com/apps/renovate) does not support buildSrc. It is a bot that can update dependencies in the project, but primarily supports Version Catalog or the default build system.
 
-Recently, DependaBot started [supporting](https://github.com/dependabot/dependabot-core/issues/2180) reading dependencies from the buildSrc module, but unfortunately, the solution didn't prove to be effective, so the Android team decided to abandon DependaBot in January this year.
+Recently, Dependabot started [supporting](https://github.com/dependabot/dependabot-core/issues/2180) reading dependencies from the buildSrc module, but unfortunately, the solution didn't prove to be effective, so the Fishbrain Android team decided to abandon Dependabot in January this year.
 
-Dependencies updates in the team were handled through a plugin that generated a list using the dependency tree. Then the team manually addressed the issues one by one. The update process often took a long time, and there was a problem with the IDE not highlighting the possibility of updating dependencies. This resulted in delayed dependency updates and increased research time. In the context of a small development team, this was critical. The further the update, the more accumulated migration changes, making it harder to update later. Snowball effect.
+Dependencies updates in the team were handled through a plugin that generated a list using the dependency tree. The team then manually addressed the issues one by one. The update process often took a long time, and there was a problem with the IDE not highlighting the possibility of updating dependencies. This resulted in delayed dependency updates and increased research time. In the context of a small development team, this was critical. The further behind the update, the more accumulated migration changes, making it harder to update later. This created a snowball effect.
 
 ![Example of dependency update task](tasklist.png)
 
@@ -73,7 +73,7 @@ We also set up a separate repository for migration and testing, which allowed ex
 
 ## Secondary migrations
 
-During the work, it was necessary to migrate plugin references. In the new model, we also had to move from directly applying plugins in the module-level project file. It's not a big deal, but it's a step forward to the last changes in Gradle Build System. Also, it helps us to be more flexible in plugin updates.
+During the work, it was necessary to migrate plugin references. In the new model, we also had to move from directly applying plugins in the module-level project file. It's not a big deal, but it's a step forward to the last changes in Gradle Build System. It also helps us to be more flexible in plugin updates.
 
 Before:
 ```groovy
@@ -116,6 +116,6 @@ Before:
 After:
 ![[Gradle Scan](https://scans.gradle.com/s/y3a2pc6hw2d56)](after.png)
 
-The build time remained unchanged, which was expected. In the current implementation, several modules and additional operations disappeared. However, we obtained a more modern build system that allows us to be flexible. Most importantly, we added automation and back DependaBot to our CI/CD. Now, we need to think less about dependency updates and searching for changelogs. The bot does the main work, and the programmer only needs to ensure that everything is going well after the dependency update. As a pleasant bonus, the IDE now highlights available versions again.
+The build time remained unchanged, which was expected. In the current implementation, several modules and additional operations disappeared. However, we obtained a more modern build system that allows us to be flexible. Most importantly, we added automation and returned Dependabot to our CI/CD. Now we need to think less about dependency updates and searching for changelogs. The bot does the main work, and the programmer only needs to ensure that everything is going well after the dependency update. As a pleasant bonus, the IDE now highlights available versions again.
 
 ![Dependabot update example](dependabot_example.png)
