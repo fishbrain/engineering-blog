@@ -108,7 +108,7 @@ pluginManagement {
 }
 ```
 
-## Consequences
+## Outcome
 
 Before:
 ![[Gradle Scan](https://scans.gradle.com/s/shbhqfmhdgefe)](before.png)
