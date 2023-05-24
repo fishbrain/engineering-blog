@@ -4,6 +4,7 @@ import { join } from "path";
 
 // This function will append the correct directory to any images added to the post.
 function mapImages(content: string, pathPrefix: string) {
+  console.log({ pathPrefix })
   let currentIndex = 0;
   while (currentIndex !== -1) {
     currentIndex = content.indexOf("![", currentIndex);
@@ -15,7 +16,7 @@ function mapImages(content: string, pathPrefix: string) {
       return content;
     }
     currentIndex = content.indexOf("(", currentIndex);
-    if (currentIndex === -1) {
+    if (currentIndex === -1 || content[currentIndex + 1] === '/') {
       return content;
     }
     content =

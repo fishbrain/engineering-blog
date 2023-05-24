@@ -3,7 +3,7 @@ title: "Android dependency management"
 date: "2023-05-19T09:00:00.000Z"
 subtitle: "In this article, we will discuss the ongoing migration of the dependency management system within the Android team."
 imageSrc: dependabot.webp
-imageAlt: "Dependabot + Gradle + Git" 
+imageAlt: "Dependabot + Gradle + Git"
 author: anton-kondratiuk
 tags:
     - Android
@@ -15,7 +15,7 @@ tags:
 
 Each Gradle module in our project had a list of dependency links. Each dependency consists of a name and a version. The list of dependencies was stored in a special module (buildSrc) that was built first and contained elementary data structures written in Kotlin. This module allowed us to structure and manage the build of the entire application and offered complex composite builds.
 
-```kotlin 
+```kotlin
 object AnalyticsVersions {
     const val play_services_analytics_version = "16.0.8"
     const val adjust_version = "4.33.0"
@@ -111,10 +111,10 @@ pluginManagement {
 ## Outcome
 
 Before:
-![[Gradle Scan](https://scans.gradle.com/s/shbhqfmhdgefe)](before.png)
+![Gradle Scan](before.png)
 
 After:
-![[Gradle Scan](https://scans.gradle.com/s/y3a2pc6hw2d56)](after.png)
+![Gradle Scan](after.png)
 
 The build time remained unchanged, which was expected. In the current implementation, several modules and additional operations disappeared. However, we obtained a more modern build system that allows us to be flexible. Most importantly, we added automation and returned Dependabot to our CI/CD. Now we need to think less about dependency updates and searching for changelogs. The bot does the main work, and the programmer only needs to ensure that everything is going well after the dependency update. As a pleasant bonus, the IDE now highlights available versions again.
 
