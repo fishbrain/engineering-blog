@@ -8,14 +8,14 @@ layout: layout.njk
       {% if post.data.imageSrc %}
         <div class="mb-5">
           <div class="sm:mx-0">
-            <a aria-label="{{ post.data.postTitle }}" href="/posts/{{ post.fileSlug }}">
+            <a aria-label="{{ post.data.postTitle }}" href="/posts/{{ post.fileSlug }}/">
               <img src="/posts/{{ post.fileSlug }}/{{ post.data.imageSrc }}" alt="{{ post.data.imageAlt }}" class="shadow-small hover:shadow-medium transition-shadow duration-200 w-full"/>
             </a>
           </div>
         </div>
       {% endif %}
       <h3 class="text-3xl mb-3 leading-snug">
-        <a class="hover:underline" href="/posts/{{ post.fileSlug }}">{{ post.data.postTitle }}</a>
+        <a class="hover:underline" href="/posts/{{ post.fileSlug }}/">{{ post.data.postTitle }}</a>
       </h3>
       <div class="text-lg markdown">
         {% excerpt post %}
@@ -26,7 +26,7 @@ layout: layout.njk
       <div class="flex items-center">
         {% for a in authors %}
           {% if a.name == post.data.author %}
-            <a aria-label="{{post.data.author}}" href="/authors/{{post.data.author | slugify }}">
+            <a aria-label="{{post.data.author}}" href="/authors/{{post.data.author | slugify }}/">
               <img
               src="/images/authors/{{a.avatar}}"
               class="w-12 h-12 rounded-full mr-4"
@@ -35,7 +35,7 @@ layout: layout.njk
             </a>
           {% endif %}
         {% endfor %}
-        <a class="text-xl font-bold hover:underline" href="/authors/{{post.data.author | slugify }}">
+        <a class="text-xl font-bold hover:underline" href="/authors/{{post.data.author | slugify }}/">
           {{post.data.author}}
         </a>
       </div>
