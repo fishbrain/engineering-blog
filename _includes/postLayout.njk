@@ -17,7 +17,7 @@ eleventyComputed:
     <div class="flex items-center">
       {% for a in authors %}
         {% if a.name == author %}
-          <a class="text-xl font-bold hover:underline" href="/authors/{{author | slugify }}" aria-label="{{author}}">
+          <a class="text-xl font-bold hover:underline" href="/authors/{{author | slugify }}/" aria-label="{{author}}">
             <img
                 src="/images/authors/{{a.avatar}}"
                 class="w-12 h-12 rounded-full mr-4"
@@ -26,7 +26,7 @@ eleventyComputed:
           </a>
         {% endif %}
       {% endfor %}
-      <a class="text-xl font-bold hover:underline" href="/authors/{{author | slugify }}">
+      <a class="text-xl font-bold hover:underline" href="/authors/{{author | slugify }}/">
         {{author}}
       </a>
     </div>
@@ -34,7 +34,7 @@ eleventyComputed:
   <div class="mb-8 md:mb-16 max-w-2xl mx-auto">
     {% if imageSrc %}
       <div class="sm:mx-0">
-        <a href="/posts/{{slug}}" aria-label="{{title}}">
+        <a href="/posts/{{slug}}/" aria-label="{{title}}">
           <img src="{{ imageSrc }}" alt="{{ imageAlt }}"/>
         </a>
       </div>
@@ -45,7 +45,7 @@ eleventyComputed:
       <div class="flex items-center">
         {% for a in authors %}
           {% if a.name == author %}
-            <a aria-label="{{author}}" href="/authors/{{author | slugify }}">
+            <a aria-label="{{author}}" href="/authors/{{author | slugify }}/">
               <img
               src="/images/authors/{{a.avatar}}"
               class="w-12 h-12 rounded-full mr-4"
@@ -54,7 +54,7 @@ eleventyComputed:
             </a>
           {% endif %}
         {% endfor %}
-        <a class="text-xl font-bold hover:underline" href="/authors/{{author | slugify }}">
+        <a class="text-xl font-bold hover:underline" href="/authors/{{author | slugify }}/">
           {{author}}
         </a>
       </div>
@@ -68,7 +68,7 @@ eleventyComputed:
     {{ content | safe }}
     <section class="flex flex-wrap">
       {% for tag in postTags %}
-        <a href="/tags/{{ tag | slugify }}" class="bg-gray-400 py-2 px-4 text-gray-900 mr-4 mb-4">{{ tag }}</a>
+        <a href="/tags/{{ tag | slugify }}/" class="bg-gray-400 py-2 px-4 text-gray-900 mr-4 mb-4">{{ tag }}</a>
       {% endfor %}
     </section>
   </div>
