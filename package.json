@@ -2,29 +2,19 @@
   "name": "engineering-blog",
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently \"npm run dev:css\" \"npx @11ty/eleventy --serve\"",
+    "dev": "concurrently \"npm run dev:css\" \"npx @11ty/eleventy --serve --formats=md,html,png,jpg,jpeg,ico,webp,gif\"",
     "dev:css": "tailwindcss -i index.css -o _site/assets/css/index.css --watch --postcss",
     "build:css": "tailwindcss -i index.css -o _site/assets/css/index.css --postcss",
-    "build": "npm run build:css && npx @11ty/eleventy"
+    "build": "npm run build:css && npx @11ty/eleventy --formats=md,html,png,jpg,jpeg,ico,webp,gif"
   },
   "license": "MIT",
   "devDependencies": {
-<<<<<<< HEAD
-    "@types/classnames": "^2.3.1",
-    "@types/jest": "^29.5.8",
-    "@types/node": "^20.9.0",
-    "@types/react": "^17.0.40",
-    "@types/react-dom": "^18.0.3",
-    "@types/react-toggle": "^4.0.3",
-    "postcss-preset-env": "^6.7.1",
-=======
     "@11ty/eleventy": "^2.0.1",
     "autoprefixer": "^10.4.16",
     "concurrently": "^8.2.2",
     "eleventy-plugin-reading-time": "^0.0.1",
     "markdown-it-prism": "^2.3.0",
     "postcss": "^8.4.31",
->>>>>>> 53a6c18 (Convert blog to use Eleventy instead of Next.js)
     "tailwindcss": "^3.3.5"
   }
 }
