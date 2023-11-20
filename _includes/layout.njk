@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml"/>
+    <meta name="description" content="We make an app for fishing, the world's most popular hobby."/>
+    <meta name="color-scheme" content="light dark">
+    {% if metaImage %}
+      <meta property="og:image" content="{{ metaImage }}"/>
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/index.css' | url }}">
+    <link href="https://unpkg.com/prism-themes@1.4.0/themes/prism-nord.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="min-h-screen">
+
+      <div class="container max-w-3xl mx-auto px-5">
+        <header class="flex items-center mt-8 mb-4">
+          <a href="/">
+            <img src="/app-icon.png" alt="Fishbrain" class="h-12 mr-2"/>
+          </a>
+          <a href="/" class="hover:underline">
+            {% if metaImage %}
+              <h1 class="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mr-auto">{{ meta.siteTitle }}</h1>
+            {% else %}
+              <div class="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mr-auto">{{ meta.siteTitle }}</div>
+            {% endif %}
+          </a>
+          <input id="dark-mode" class="dark-mode-checkbox visually-hidden" type="checkbox">
+        </header>
+        <hr/>
+        <div class="py-2 uppercase text-sm text-gray-500">
+          <a class="hover:underline" href="https://fishbrain.com">Get the app</a>
+          <span class="px-2">|</span>
+          <a class="hover:underline" href="https://careers.fishbrain.com/">Join the team</a>
+        </div>
+        <hr class="mb-8"/>
+        <main>
+          {{ content | safe }}
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

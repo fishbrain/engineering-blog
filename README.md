@@ -7,25 +7,23 @@ This repo contains the code for the [Fishbrain Engineering Blog](https://enginee
 Run:
 
 ```sh
-> yarn && yarn dev
+> yarn
+> yarn dev
 ```
 
-You'll now have a local instance of the blog running at [localhost:3000](localhost:3000);
+You'll now have a local instance of the blog running at [localhost:8000](localhost:8000);
 
 ## Deploying
 
-Everytime a commit is made to the `main` branch, the app is built using Codebuild and deployed to an
+Everytime a commit is made to the `main` branch, the app is built using Github Actions and deployed to an
 S3 bucket.
 
 ## Adding a new post
 
-You can add a post by running:
+To add a new post just clone a folder in the `/posts` folder. Rename it and update the frontmatter (the metadata at the
+top of the file).
 
-```sh
-> yarn add-post
-```
-
-Exisiting posts can be found at [./public/content/posts](./public/content/posts) and authors at [./public/content/authors](./public/content/authors).
+If it's your first post also update `/_data/authors.json` with your info.
 
 ## Writing a post
 
@@ -55,30 +53,33 @@ You can tag your post by adding a tags field to your post frontmatter:
 
 ```yaml
 ---
-title: Structuring an Elixir+Phoenix App
+postTitle: Structuring an Elixir+Phoenix App
 date: "2020-07-17T22:12:03.284Z"
-author: brian-underwood
-tags:
+author: Brian Underwood
+postTags:
   - Elixir
   - Phoenix
 ---
 ```
 
+> NOTE: Don't use `tag` - this value should always be `post`,
+
 ### Adding iframes/embeds
 
-We use a custom syntax for embedding iframes (e.g. Youtube videos, etc.):
+You can use HTML for embedding iframes (e.g. Youtube videos, etc.):
 
 ```markdown
 
 <!-- with a caption -->
-?[Here's my video](https://www.youtube.com/embed/5qap5aO4i9A)
+<figure>
+  <iframe src="https://www.youtube.com/embed/dtxPp9UOcIc" height="480" width="670" allowfullscreen="true" frameborder="0"></iframe>
+  <figcaption>Here's my video</figcaption>
+</figure>
 
 <!-- without a caption -->
-?[](https://www.youtube.com/embed/5qap5aO4i9A)
+<iframe src="https://www.youtube.com/embed/dtxPp9UOcIc" height="480" width="670" allowfullscreen="true" frameborder="0"></iframe>
 
 ```
-
-Domains must be whitelisted in [lib/markdownToHtml.ts](lib/markdownToHtml.ts).
 
 #### Embedding tweets
 
@@ -96,7 +97,3 @@ we're missing the following capabilities:
 - URL embeds like seen for "Noisli" in this article https://medium.com/fishbrain/transitioning-into-working-remote-3dbba1c26aac
 - Cant have urls in image caption/alt E.g. ![An illustration of a sphere with its three axis. Sourced from Wikipedia.](1_bKy1EAZynH-oAGVDOndRoQ.png) - the wikipedia part should be linkable.
 - Cant embed Gists (see https://medium.com/fishbrain/finding-the-center-point-in-a-cluster-of-coordinates-e607cdf75fd5)
-
-## Known issues
-
-- Sometimes images will appear missing in the dev environment. If this happens just restart the dev server.

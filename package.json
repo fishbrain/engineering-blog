@@ -2,42 +2,20 @@
   "name": "engineering-blog",
   "version": "1.0.0",
   "scripts": {
-    "add-post": "./scripts/createPost.js",
-    "dev": "next",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start",
-    "typecheck": "tsc"
+    "dev": "concurrently \"yarn dev:css\" \"npx @11ty/eleventy --serve --formats=md,html,png,jpg,jpeg,ico,webp,gif\"",
+    "dev:css": "tailwindcss -i index.css -o _site/assets/css/index.css --watch --postcss",
+    "build:css": "tailwindcss -i index.css -o _site/assets/css/index.css --postcss",
+    "build": "yarn build:css && npx @11ty/eleventy --formats=md,html,png,jpg,jpeg,ico,webp,gif"
   },
-  "dependencies": {
-    "classnames": "2.3.2",
-    "date-fns": "^2.30.0",
-    "gray-matter": "^4.0.3",
-    "inquirer": "9.0.2",
-    "mdx-prism": "^0.3.1",
-    "next": "^12.3.4",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-toggle": "^4.1.2",
-    "reading-time": "^1.5.0",
-    "rehype": "^11.0.0",
-    "rehype-stringify": "^8.0.0",
-    "remark": "11.0.2",
-    "remark-html": "13.0.2",
-    "remark-rehype": "^8.1.0",
-    "slugify": "^1.6.6",
-    "typescript": "^5.2.2",
-    "use-dark-mode": "^2.3.1"
-  },
+  "license": "MIT",
   "devDependencies": {
-    "@types/classnames": "^2.3.1",
-    "@types/jest": "^29.5.8",
-    "@types/node": "^20.9.0",
-    "@types/react": "^17.0.40",
-    "@types/react-dom": "^18.0.3",
-    "@types/react-toggle": "^4.0.3",
-    "postcss-preset-env": "^6.7.1",
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "eleventy-plugin-reading-time": "^0.0.1",
+    "markdown-it-prism": "^2.3.0",
+    "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5"
   },
-  "license": "MIT"
+  "packageManager": "yarn@4.0.2"
 }

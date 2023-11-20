@@ -1,0 +1,75 @@
+---
+layout: layout.njk
+eleventyComputed:
+  title: "{{ postTitle }} | {{ meta.siteTitle }}"
+  metaImage: "{{ imageSrc }}"
+---
+<article class="mb-32">
+  <div class="tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
+    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight md:leading-none text-center md:text-left">
+      {{ postTitle }}
+    </h1>
+    {% if subtitle %}
+      <p class="mt-6 text-lg">{{ subtitle }}</p>
+    {% endif %}
+  </div>
+  <div class="hidden md:block md:mb-12">
+    <div class="flex items-center">
+      {% for a in authors %}
+        {% if a.name == author %}
+          <a class="text-xl font-bold hover:underline" href="/authors/{{author | slugify }}" aria-label="{{author}}">
+            <img
+                src="/images/authors/{{a.avatar}}"
+                class="w-12 h-12 rounded-full mr-4"
+                alt="{{author}}"
+/>
+          </a>
+        {% endif %}
+      {% endfor %}
+      <a class="text-xl font-bold hover:underline" href="/authors/{{author | slugify }}">
+        {{author}}
+      </a>
+    </div>
+  </div>
+  <div class="mb-8 md:mb-16 max-w-2xl mx-auto">
+    {% if imageSrc %}
+      <div class="sm:mx-0">
+        <a href="/posts/{{slug}}" aria-label="{{title}}">
+          <img src="{{ imageSrc }}" alt="{{ imageAlt }}"/>
+        </a>
+      </div>
+    {% endif %}
+  </div>
+  <div class="max-w-2xl mx-auto">
+    <div class="block md:hidden mb-6">
+      <div class="flex items-center">
+        {% for a in authors %}
+          {% if a.name == author %}
+            <a aria-label="{{author}}" href="/authors/{{author | slugify }}">
+              <img
+              src="/images/authors/{{a.avatar}}"
+              class="w-12 h-12 rounded-full mr-4"
+              alt="{{author}}"
+/>
+            </a>
+          {% endif %}
+        {% endfor %}
+        <a class="text-xl font-bold hover:underline" href="/authors/{{author | slugify }}">
+          {{author}}
+        </a>
+      </div>
+    </div>
+    <div class="mb-6 text-lg">
+      <time datetime="{{ date }}">{% formatDate date %}</time> - {{ content | readingTime }} read
+    </div>
+  </div>
+  <PostBody content={post.content} tags={post.postTags}/>
+  <div class="max-w-2xl mx-auto markdown">
+    {{ content | safe }}
+    <section class="flex flex-wrap">
+      {% for tag in postTags %}
+        <a href="/tags/{{ tag | slugify }}" class="bg-gray-400 py-2 px-4 text-gray-900 mr-4 mb-4">{{ tag }}</a>
+      {% endfor %}
+    </section>
+  </div>
+</article>

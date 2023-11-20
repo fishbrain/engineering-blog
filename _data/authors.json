@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Klas Eskilson",
+    "avatar": "1_zSqaPz5bMJHwmyprRRmK0g.jpeg"
+  },
+  {
+    "name": "Brian Underwood",
+    "avatar": "brian.jpg"
+  },
+  {
+    "name": "Anton Kondratiuk",
+    "avatar": "anton.jpeg",
+    "shortDescription": "Android Engineer - Platform"
+  },
+  {
+    "name": "Emil Bogren",
+    "avatar": "emil.jpeg",
+    "shortDescription": "Engineering Manager - Social"
+  },
+  {
+    "name": "Gayan Witharana",
+    "avatar": "gayan.jpg",
+    "shortDescription": "Frontend Engineer in the Web-Discovery team"
+  },
+  {
+    "name": "Knut Holm",
+    "avatar": "knut.jpeg",
+    "shortDescription": "Engineering Manager and Frontend Developer"
+  },
+  {
+    "name": "Luke Hansford",
+    "avatar": "luke_smallest.jpg",
+    "shortDescription": "Engineering manager and full-stack web developer"
+  },
+  {
+    "name": "Pedro Mancheno",
+    "avatar": "1_PG2n91CBU1I42lTpwkgz_g.jpeg",
+    "shortDescription": "Software Engineer. Crafting beautiful code for the sake of my future self."
+  }
+]
