@@ -2,10 +2,10 @@
   "name": "engineering-blog",
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently \"npm run dev:css\" \"npx @11ty/eleventy --serve --formats=md,html,png,jpg,jpeg,ico,webp,gif\"",
+    "dev": "concurrently \"yarn dev:css\" \"npx @11ty/eleventy --serve --formats=md,html,png,jpg,jpeg,ico,webp,gif\"",
     "dev:css": "tailwindcss -i index.css -o _site/assets/css/index.css --watch --postcss",
     "build:css": "tailwindcss -i index.css -o _site/assets/css/index.css --postcss",
-    "build": "npm run build:css && npx @11ty/eleventy --formats=md,html,png,jpg,jpeg,ico,webp,gif"
+    "build": "yarn build:css && npx @11ty/eleventy --formats=md,html,png,jpg,jpeg,ico,webp,gif"
   },
   "license": "MIT",
   "devDependencies": {
@@ -16,5 +16,6 @@
     "markdown-it-prism": "^2.3.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5"
-  }
+  },
+  "packageManager": "yarn@4.0.2"
 }

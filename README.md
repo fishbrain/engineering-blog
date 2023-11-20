@@ -7,8 +7,8 @@ This repo contains the code for the [Fishbrain Engineering Blog](https://enginee
 Run:
 
 ```sh
-> npm i
-> npm run dev
+> yarn
+> yarn dev
 ```
 
 You'll now have a local instance of the blog running at [localhost:8000](localhost:8000);
