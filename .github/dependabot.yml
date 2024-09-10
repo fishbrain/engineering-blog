@@ -8,13 +8,13 @@ version: 2
   "open-pull-requests-limit": 10
   "package-ecosystem": "npm"
   "reviewers":
-  - "fishbrain/web-developers"
+  - "fishbrain/platform-team"
   "schedule":
     "interval": "daily"
 - "directory": "/"
   "open-pull-requests-limit": 10
   "package-ecosystem": "github-actions"
   "reviewers":
-  - "fishbrain/web-developers"
+  - "fishbrain/platform-team"
   "schedule":
     "interval": "daily"
