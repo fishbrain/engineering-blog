@@ -992,7 +992,7 @@ __metadata:
     eleventy-plugin-reading-time: "npm:^0.0.1"
     markdown-it-prism: "npm:^2.3.0"
     postcss: "npm:^8.4.39"
-    tailwindcss: "npm:^3.4.6"
+    tailwindcss: "npm:^3.4.11"
   languageName: unknown
   linkType: soft
 
@@ -3025,9 +3025,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.4.6":
-  version: 3.4.6
-  resolution: "tailwindcss@npm:3.4.6"
+"tailwindcss@npm:^3.4.11":
+  version: 3.4.11
+  resolution: "tailwindcss@npm:3.4.11"
   dependencies:
     "@alloc/quick-lru": "npm:^5.2.0"
     arg: "npm:^5.0.2"
@@ -3054,7 +3054,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 8d82b697ecf41d8cd100ab3369e3cbcb30e350afc5b595a000b201ba666628a68543154297f96c5b2a3f2614f37bb981af4766556ebaae832079fa9a436e8563
+  checksum: b5bce27a6370e7a1c68a8c61db1e5379ccd14dcc5410149342f7742f45be0f2af72cbc0f3ac4e97535fc214d3f2546ade5edbb737f5b74d0a2431b8bb8e54b0d
   languageName: node
   linkType: hard
 
