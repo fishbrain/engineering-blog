@@ -5,6 +5,10 @@ version: 2
 
 "updates":
 - "directory": "/"
+  "ignore":
+  - "dependency-name": "@types/node"
+    "update-types":
+    - "version-update:semver-patch"
   "open-pull-requests-limit": 10
   "package-ecosystem": "npm"
   "reviewers":
