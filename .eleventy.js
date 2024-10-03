@@ -1,7 +1,7 @@
-const readingTime = require("eleventy-plugin-reading-time");
-const { default: markdownItPrism } = require("markdown-it-prism");
+import readingTime from "eleventy-plugin-reading-time";
+import markdownItPrism from "markdown-it-prism";
 
-module.exports = function (eleventyConfig) {
+export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./index.css");
 
   eleventyConfig.addShortcode("formatDate", function (dateString) {
