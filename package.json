@@ -1,6 +1,7 @@
 {
   "name": "engineering-blog",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "concurrently \"yarn dev:css\" \"npx @11ty/eleventy --serve --formats=md,html,png,jpg,jpeg,ico,webp,gif\"",
     "dev:css": "tailwindcss -i index.css -o _site/assets/css/index.css --watch --postcss",
