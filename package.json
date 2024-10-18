@@ -16,7 +16,7 @@
     "eleventy-plugin-reading-time": "^0.0.1",
     "markdown-it-prism": "^2.3.0",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.6"
+    "tailwindcss": "^3.4.14"
   },
   "packageManager": "yarn@4.0.2"
 }
