@@ -1,55 +1,58 @@
-@tailwind base;
+@import 'tailwindcss';
 
-:root {
-  --c-text: #333;
-  --c-background: #fff;
+@theme {
+  --tracking-tighter: -0.04em;
+
+  --leading-tight: 1.2;
+
+  --text-5xl: 2.5rem;
+  --text-6xl: 2.75rem;
+  --text-7xl: 4.5rem;
+
+  --shadow-small: 0 5px 10px rgba(0, 0, 0, 0.12);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --c-text: #999;
-    --c-background: #1a1919;
+    --c-text: #333;
+    --c-background: #fff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --c-text: #999;
+      --c-background: #1a1919;
+    }
+  }
+
+  body {
+    color: var(--c-text);
+    background-color: var(--c-background);
+    transition: background-color 0.3s ease;
+  }
+
+  .dark-mode-checkbox:checked ~ body {
+    --c-text: var(--c-dark-text);
+    --c-background: var(--c-dark-background);
+  }
+
+  blockquote {
+    @apply ml-4 pl-4 border-gray-400 border-l-4 italic;
+  }
+
+  figcaption {
+    @apply text-center italic py-2;
+  }
+
+  ul {
+    @apply list-inside list-disc;
+  }
+
+  li:not(:last-of-type) {
+    @apply mb-4;
   }
 }
-
-body {
-  color: var(--c-text);
-  background-color: var(--c-background);
-  transition: background-color 0.3s ease;
-}
-
-.dark-mode-checkbox:checked ~ body {
-  --c-text: var(--c-dark-text);
-  --c-background: var(--c-dark-background);
-}
-
-blockquote {
-  @apply ml-4 pl-4 border-gray-400 border-l-4 italic;
-}
-
-figcaption {
-  @apply text-center italic py-2;
-}
-
-ul {
-  @apply list-inside list-disc;
-}
-
-li:not(:last-of-type) {
-  @apply mb-4;
-}
-
-/* Start purging... */
-@tailwind components;
-/* Stop purging. */
-
-/* Write you own custom component styles here */
-
-/* Start purging... */
-@tailwind utilities;
-/* Stop purging. */
-
-/* Your own custom utilities */
 
 .markdown {
   @apply text-lg leading-relaxed;
@@ -75,5 +78,5 @@ li:not(:last-of-type) {
 }
 
 .markdown :not(pre) > code {
-  @apply bg-gray-400 px-1 rounded text-gray-900;
+  @apply bg-gray-400 px-1 rounded-sm text-gray-900;
 }
