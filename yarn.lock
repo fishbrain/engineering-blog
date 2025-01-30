@@ -1137,7 +1137,7 @@ __metadata:
     eleventy-plugin-reading-time: "npm:^0.0.1"
     markdown-it-prism: "npm:^2.3.0"
     postcss: "npm:^8.5.1"
-    tailwindcss: "npm:4.0.0"
+    tailwindcss: "npm:4.0.1"
   languageName: unknown
   linkType: soft
 
