@@ -411,7 +411,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/node@npm:^4.0.0, @tailwindcss/node@npm:^4.0.1":
+"@tailwindcss/node@npm:^4.0.1":
   version: 4.0.1
   resolution: "@tailwindcss/node@npm:4.0.1"
   dependencies:
@@ -499,7 +499,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/oxide@npm:^4.0.0, @tailwindcss/oxide@npm:^4.0.1":
+"@tailwindcss/oxide@npm:^4.0.1":
   version: 4.0.1
   resolution: "@tailwindcss/oxide@npm:4.0.1"
   dependencies:
@@ -541,17 +541,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/postcss@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@tailwindcss/postcss@npm:4.0.0"
+"@tailwindcss/postcss@npm:4.0.1":
+  version: 4.0.1
+  resolution: "@tailwindcss/postcss@npm:4.0.1"
   dependencies:
     "@alloc/quick-lru": "npm:^5.2.0"
-    "@tailwindcss/node": "npm:^4.0.0"
-    "@tailwindcss/oxide": "npm:^4.0.0"
+    "@tailwindcss/node": "npm:^4.0.1"
+    "@tailwindcss/oxide": "npm:^4.0.1"
     lightningcss: "npm:^1.29.1"
     postcss: "npm:^8.4.41"
-    tailwindcss: "npm:4.0.0"
-  checksum: a605393e9939026d8b723f676dfe5ba0bfcfc8dc3c3c26329890b0f9119b1f78ef9c8c6983bdeecbd5dc88bd2700a31f64ebdd386ac4c973ba789237baa8d55c
+    tailwindcss: "npm:4.0.1"
+  checksum: 34a95ec1e730a266a30a45f25a2837c39ce66839376a1da239ee37f453edff8fe7b59952030f8391b1f557da3c17338e85e9e432ff0a1d3dbb7161a3092f900e
   languageName: node
   linkType: hard
 
@@ -1132,7 +1132,7 @@ __metadata:
   dependencies:
     "@11ty/eleventy": "npm:^3.0.0"
     "@tailwindcss/cli": "npm:^4.0.1"
-    "@tailwindcss/postcss": "npm:4.0.0"
+    "@tailwindcss/postcss": "npm:4.0.1"
     concurrently: "npm:^9.1.2"
     eleventy-plugin-reading-time: "npm:^0.0.1"
     markdown-it-prism: "npm:^2.3.0"
