@@ -66,9 +66,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/eleventy@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@11ty/eleventy@npm:3.1.0"
+"@11ty/eleventy@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "@11ty/eleventy@npm:3.1.1"
   dependencies:
     "@11ty/dependency-tree": "npm:^4.0.0"
     "@11ty/dependency-tree-esm": "npm:^2.0.0"
@@ -81,7 +81,7 @@ __metadata:
     "@sindresorhus/slugify": "npm:^2.2.1"
     bcp-47-normalize: "npm:^2.3.0"
     chokidar: "npm:^3.6.0"
-    debug: "npm:^4.4.0"
+    debug: "npm:^4.4.1"
     dependency-graph: "npm:^1.0.0"
     entities: "npm:^6.0.0"
     filesize: "npm:^10.1.6"
@@ -89,7 +89,7 @@ __metadata:
     iso-639-1: "npm:^3.1.5"
     js-yaml: "npm:^4.1.0"
     kleur: "npm:^4.1.5"
-    liquidjs: "npm:^10.21.0"
+    liquidjs: "npm:^10.21.1"
     luxon: "npm:^3.6.1"
     markdown-it: "npm:^14.1.0"
     minimist: "npm:^1.2.8"
@@ -102,10 +102,10 @@ __metadata:
     posthtml-match-helper: "npm:^2.0.3"
     semver: "npm:^7.7.2"
     slugify: "npm:^1.6.6"
-    tinyglobby: "npm:^0.2.13"
+    tinyglobby: "npm:^0.2.14"
   bin:
     eleventy: cmd.cjs
-  checksum: 9030665a51e573a82b3cb86bf53e0c8a0e8184315daab70ac9b4010bb48149f3c427792b516c49cd09496c745fef850da11bf1a79481e2bb6be5c6c41bc60561
+  checksum: 2841b5bd48ddb63b46fd9f98491835fb9cfd49c3220a5d37058216d6755a3a09e809f44ba6dc1d94c14c92a39032112e353bb0859c5561bcc08f26a8c8188402
   languageName: node
   linkType: hard
 
@@ -1200,7 +1200,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^4.3.5, debug@npm:^4.4.0":
+"debug@npm:^4.3.5, debug@npm:^4.4.0, debug@npm:^4.4.1":
   version: 4.4.1
   resolution: "debug@npm:4.4.1"
   dependencies:
@@ -1342,7 +1342,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "engineering-blog@workspace:."
   dependencies:
-    "@11ty/eleventy": "npm:^3.1.0"
+    "@11ty/eleventy": "npm:^3.1.1"
     "@tailwindcss/cli": "npm:^4.1.7"
     "@tailwindcss/postcss": "npm:4.1.8"
     concurrently: "npm:^9.1.2"
@@ -2026,15 +2026,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"liquidjs@npm:^10.21.0":
-  version: 10.21.0
-  resolution: "liquidjs@npm:10.21.0"
+"liquidjs@npm:^10.21.1":
+  version: 10.21.1
+  resolution: "liquidjs@npm:10.21.1"
   dependencies:
     commander: "npm:^10.0.0"
   bin:
     liquid: bin/liquid.js
     liquidjs: bin/liquid.js
-  checksum: 20dfd27483bc965846c2ced0e4f90b8262a7dffea2209581ff25e98e37a6e62f2268fb3d6cd89397cb21a3202e375a8f5150d332f949114cf16e6f43973d2c5b
+  checksum: 4084449960f165925740276351c2938a48d768904e1e3a0b6e60ab050aca6fcb553d2fbcd8c7d521357114aa56a18cf2fc53cac6a537cf5a17811d7db0378d47
   languageName: node
   linkType: hard
 
@@ -2978,13 +2978,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.13":
-  version: 0.2.13
-  resolution: "tinyglobby@npm:0.2.13"
+"tinyglobby@npm:^0.2.14":
+  version: 0.2.14
+  resolution: "tinyglobby@npm:0.2.14"
   dependencies:
     fdir: "npm:^6.4.4"
     picomatch: "npm:^4.0.2"
-  checksum: ef07dfaa7b26936601d3f6d999f7928a4d1c6234c5eb36896bb88681947c0d459b7ebe797022400e555fe4b894db06e922b95d0ce60cb05fd827a0a66326b18c
+  checksum: f789ed6c924287a9b7d3612056ed0cda67306cd2c80c249fd280cf1504742b12583a2089b61f4abbd24605f390809017240e250241f09938054c9b363e51c0a6
   languageName: node
   linkType: hard
 
