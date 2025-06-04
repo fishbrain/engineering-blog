@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.0",
+    "@11ty/eleventy": "^3.1.1",
     "@tailwindcss/cli": "^4.1.7",
     "@tailwindcss/postcss": "4.1.8",
     "concurrently": "^9.1.2",
