@@ -11,7 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.1",
-    "@tailwindcss/cli": "^4.1.7",
+    "@tailwindcss/cli": "^4.1.10",
     "@tailwindcss/postcss": "4.1.10",
     "concurrently": "^9.1.2",
     "eleventy-plugin-reading-time": "^0.0.1",
