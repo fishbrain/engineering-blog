@@ -13,7 +13,7 @@
     "@11ty/eleventy": "^3.1.1",
     "@tailwindcss/cli": "^4.1.10",
     "@tailwindcss/postcss": "4.1.10",
-    "concurrently": "^9.1.2",
+    "concurrently": "^9.2.0",
     "eleventy-plugin-reading-time": "^0.0.1",
     "markdown-it-prism": "^3.0.0",
     "postcss": "^8.5.5",
