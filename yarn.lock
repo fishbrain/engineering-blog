@@ -1185,7 +1185,7 @@ __metadata:
     eleventy-plugin-reading-time: "npm:^0.0.1"
     markdown-it-prism: "npm:^3.0.0"
     postcss: "npm:^8.5.6"
-    tailwindcss: "npm:4.1.10"
+    tailwindcss: "npm:4.1.11"
   languageName: unknown
   linkType: soft
 
@@ -2769,6 +2769,13 @@ __metadata:
   version: 4.1.10
   resolution: "tailwindcss@npm:4.1.10"
   checksum: 9da74ee1f25d6065150f132a3eb18caad82cd9902b7c552278eb627266c68b12990a22bb4b6169d04ce775c058a8d2638a5051be905be99961889c572e2aeab8
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:4.1.11":
+  version: 4.1.11
+  resolution: "tailwindcss@npm:4.1.11"
+  checksum: e23eed0a0d6557b3aff8ba320b82758988ca67c351ee9b33dfc646e83a64f6eaeca6183dfc97e931f7b2fab46e925090066edd697d2ede3f396c9fdeb4af24c1
   languageName: node
   linkType: hard
 
