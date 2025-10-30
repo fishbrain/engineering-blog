@@ -66,7 +66,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/eleventy@npm:^3.1.2":
+"@11ty/eleventy@npm:3.1.2":
   version: 3.1.2
   resolution: "@11ty/eleventy@npm:3.1.2"
   dependencies:
@@ -471,7 +471,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/cli@npm:^4.1.14":
+"@tailwindcss/cli@npm:4.1.14":
   version: 4.1.14
   resolution: "@tailwindcss/cli@npm:4.1.14"
   dependencies:
@@ -1155,7 +1155,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^9.2.1":
+"concurrently@npm:9.2.1":
   version: 9.2.1
   resolution: "concurrently@npm:9.2.1"
   dependencies:
@@ -1305,7 +1305,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eleventy-plugin-reading-time@npm:^0.0.1":
+"eleventy-plugin-reading-time@npm:0.0.1":
   version: 0.0.1
   resolution: "eleventy-plugin-reading-time@npm:0.0.1"
   checksum: 10c0/4a16ca6d9a074f8c10359a616a2f81d8502e691d08293502a57da51dfafd414f07d7f68ca6f4a34b357983fbbfa21dff695f0b9b1bdcc6ce3fdc460b23a71466
@@ -1346,13 +1346,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "engineering-blog@workspace:."
   dependencies:
-    "@11ty/eleventy": "npm:^3.1.2"
-    "@tailwindcss/cli": "npm:^4.1.14"
+    "@11ty/eleventy": "npm:3.1.2"
+    "@tailwindcss/cli": "npm:4.1.14"
     "@tailwindcss/postcss": "npm:4.1.16"
-    concurrently: "npm:^9.2.1"
-    eleventy-plugin-reading-time: "npm:^0.0.1"
-    markdown-it-prism: "npm:^3.0.0"
-    postcss: "npm:^8.5.6"
+    concurrently: "npm:9.2.1"
+    eleventy-plugin-reading-time: "npm:0.0.1"
+    markdown-it-prism: "npm:3.0.0"
+    postcss: "npm:8.5.6"
     tailwindcss: "npm:4.1.16"
   languageName: unknown
   linkType: soft
@@ -2220,7 +2220,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it-prism@npm:^3.0.0":
+"markdown-it-prism@npm:3.0.0":
   version: 3.0.0
   resolution: "markdown-it-prism@npm:3.0.0"
   dependencies:
@@ -2655,6 +2655,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:8.5.6":
+  version: 8.5.6
+  resolution: "postcss@npm:8.5.6"
+  dependencies:
+    nanoid: "npm:^3.3.11"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/5127cc7c91ed7a133a1b7318012d8bfa112da9ef092dddf369ae699a1f10ebbd89b1b9f25f3228795b84585c72aabd5ced5fc11f2ba467eedf7b081a66fad024
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^8.4.41":
   version: 8.5.1
   resolution: "postcss@npm:8.5.1"
@@ -2663,17 +2674,6 @@ __metadata:
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
   checksum: 10c0/c4d90c59c98e8a0c102b77d3f4cac190f883b42d63dc60e2f3ed840f16197c0c8e25a4327d2e9a847b45a985612317dc0534178feeebd0a1cf3eb0eecf75cae4
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.5.6":
-  version: 8.5.6
-  resolution: "postcss@npm:8.5.6"
-  dependencies:
-    nanoid: "npm:^3.3.11"
-    picocolors: "npm:^1.1.1"
-    source-map-js: "npm:^1.2.1"
-  checksum: 10c0/5127cc7c91ed7a133a1b7318012d8bfa112da9ef092dddf369ae699a1f10ebbd89b1b9f25f3228795b84585c72aabd5ced5fc11f2ba467eedf7b081a66fad024
   languageName: node
   linkType: hard
 
