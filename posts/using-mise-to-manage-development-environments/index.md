@@ -1,8 +1,8 @@
 ---
 layout: postLayout.njk
 postTitle: "Using mise to manage development environments"
-date: "2024-05-08T07:41:34.989Z"
-imageSrc: photo-1592929043000-fbea34bc8ad5.avif
+date: "2025-12-15T19:42:00.000Z"
+imageSrc: photo-1592929043000-fbea34bc8ad5.jpg
 imageAlt: "Use the right tool for the job. Photo from @polarmermaid on Unsplash"
 author: Luke Hansford
 tags: post
