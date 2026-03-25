@@ -11,13 +11,13 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",
-    "@tailwindcss/cli": "4.2.1",
-    "@tailwindcss/postcss": "4.2.1",
+    "@tailwindcss/cli": "4.2.2",
+    "@tailwindcss/postcss": "4.2.2",
     "concurrently": "9.2.1",
     "eleventy-plugin-reading-time": "0.0.1",
     "markdown-it-prism": "3.0.1",
     "postcss": "8.5.8",
-    "tailwindcss": "4.2.1"
+    "tailwindcss": "4.2.2"
   },
   "packageManager": "yarn@4.12.0"
 }
