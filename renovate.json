@@ -78,6 +78,50 @@
                 "pin",
                 "digest"
             ]
+        },
+        {
+            "automerge": true,
+            "labels": [],
+            "matchPackageNames": [
+                "actions/checkout",
+                "actions/setup-node",
+                "aws-actions/configure-aws-credentials"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "digest"
+            ]
+        },
+        {
+            "automerge": true,
+            "labels": [],
+            "matchPackageNames": [
+                "yarn"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "digest"
+            ]
+        },
+        {
+            "automerge": true,
+            "labels": [],
+            "matchPackageNames": [
+                "@11ty/eleventy",
+                "eleventy-plugin-reading-time",
+                "markdown-it-prism",
+                "postcss"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "digest"
+            ]
         }
     ],
     "prConcurrentLimit": 10,
