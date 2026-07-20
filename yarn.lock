@@ -1188,7 +1188,7 @@ __metadata:
     concurrently: "npm:10.0.3"
     eleventy-plugin-reading-time: "npm:0.0.1"
     markdown-it-prism: "npm:3.0.1"
-    postcss: "npm:8.5.16"
+    postcss: "npm:8.5.19"
     tailwindcss: "npm:4.3.2"
   languageName: unknown
   linkType: soft
@@ -2330,7 +2330,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.16, postcss@npm:^8.5.15":
+"postcss@npm:8.5.19":
+  version: 8.5.19
+  resolution: "postcss@npm:8.5.19"
+  dependencies:
+    nanoid: "npm:^3.3.12"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/302af9e4dfa8cce4f43af1798576b3a77ab7b23abac5522328c6c7a830d49b31281cba9d6071e478e6970a05ef82346d1570b8fbffae912f26a4f1a1a07f0a44
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.15":
   version: 8.5.16
   resolution: "postcss@npm:8.5.16"
   dependencies:
