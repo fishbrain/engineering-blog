@@ -1187,7 +1187,7 @@ __metadata:
     "@tailwindcss/postcss": "npm:4.3.3"
     concurrently: "npm:10.0.3"
     eleventy-plugin-reading-time: "npm:0.0.1"
-    markdown-it-prism: "npm:3.0.1"
+    markdown-it-prism: "npm:4.0.0"
     postcss: "npm:8.5.19"
     tailwindcss: "npm:4.3.3"
   languageName: unknown
@@ -1937,14 +1937,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it-prism@npm:3.0.1":
-  version: 3.0.1
-  resolution: "markdown-it-prism@npm:3.0.1"
+"markdown-it-prism@npm:4.0.0":
+  version: 4.0.0
+  resolution: "markdown-it-prism@npm:4.0.0"
   dependencies:
     prismjs: "npm:1.30.0"
   peerDependencies:
     markdown-it: ">=7.0.1 <15.0.0"
-  checksum: 10c0/eeeae27d4351844649a0442d5952f27059b4706826e8ad8cb0e6a9fe1b0a7f1e3268e1b2aec2f2d16193769f6a7509cc4abc50833a060ec3cf28527941d6146b
+    markdown-it-attrs: ">=5.0.0"
+  peerDependenciesMeta:
+    markdown-it-attrs:
+      optional: true
+  checksum: 10c0/edc9d42096c59fd18fa875b2f800efa4964755d24a1d3222b5075a0cd8836bb5601fd94bbca0a46222daeb6ec61023d905b47f4c51c4f0b7d991c76e9999ccd7
   languageName: node
   linkType: hard
 

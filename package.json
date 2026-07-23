@@ -15,7 +15,7 @@
     "@tailwindcss/postcss": "4.3.3",
     "concurrently": "10.0.3",
     "eleventy-plugin-reading-time": "0.0.1",
-    "markdown-it-prism": "3.0.1",
+    "markdown-it-prism": "4.0.0",
     "postcss": "8.5.19",
     "tailwindcss": "4.3.3"
   },
