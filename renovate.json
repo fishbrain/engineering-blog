@@ -135,5 +135,8 @@
     "reviewersFromCodeOwners": true,
     "schedule": [
         "* * * * 1-5"
-    ]
+    ],
+    "toolSettings": {
+        "nodeMaxMemory": 2048
+    }
 }
