@@ -76,9 +76,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/eleventy@npm:3.1.7":
-  version: 3.1.7
-  resolution: "@11ty/eleventy@npm:3.1.7"
+"@11ty/eleventy@npm:3.1.8":
+  version: 3.1.8
+  resolution: "@11ty/eleventy@npm:3.1.8"
   dependencies:
     "@11ty/chokidar-with-glob-support": "npm:^1.1.0"
     "@11ty/dependency-tree": "npm:^4.0.2"
@@ -88,7 +88,7 @@ __metadata:
     "@11ty/eleventy-utils": "npm:^2.0.7"
     "@11ty/lodash-custom": "npm:^4.17.21"
     "@11ty/posthtml-urls": "npm:^1.0.3"
-    "@11ty/recursive-copy": "npm:^4.0.4"
+    "@11ty/recursive-copy": "npm:^4.0.6"
     "@sindresorhus/slugify": "npm:^2.2.1"
     bcp-47-normalize: "npm:^2.3.0"
     debug: "npm:^4.4.3"
@@ -101,11 +101,11 @@ __metadata:
     kleur: "npm:^4.1.5"
     liquidjs: "npm:^10.30.0"
     luxon: "npm:^3.7.2"
-    markdown-it: "npm:^14.2.0"
+    markdown-it: "npm:^14.3.3"
     minimist: "npm:^1.2.8"
     moo: "npm:0.5.2"
     node-retrieve-globals: "npm:^6.0.1"
-    nunjucks: "npm:@11ty/nunjucks@^3.3.0"
+    nunjucks: "npm:^3.2.4"
     picomatch: "npm:^4.0.7"
     please-upgrade-node: "npm:^3.2.0"
     posthtml: "npm:^0.16.7"
@@ -115,7 +115,7 @@ __metadata:
     tinyglobby: "npm:^0.2.16"
   bin:
     eleventy: cmd.cjs
-  checksum: 10c0/1e78203a5a833e854a5c3160873e2e07f550e2c92e532c862a9c1582a0ae3b6ca494ec7077390175cca6635b7a7be44d9b07da78b5b3d9ffd84f18761d33efc9
+  checksum: 10c0/180ea4a59b5ef096d00e27d9e4afd21f0a5d56ef89ca903a54c93b9f1290191b1299a3113fb21f3fa44a73724cd062e14050cc62a19b91e130d70e5eabcf7a4a
   languageName: node
   linkType: hard
 
@@ -138,15 +138,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/recursive-copy@npm:^4.0.4":
-  version: 4.0.4
-  resolution: "@11ty/recursive-copy@npm:4.0.4"
+"@11ty/recursive-copy@npm:^4.0.6":
+  version: 4.0.6
+  resolution: "@11ty/recursive-copy@npm:4.0.6"
   dependencies:
+    brace-expansion: "npm:^1.1.21"
     errno: "npm:^1.0.0"
     junk: "npm:^3.1.0"
-    minimatch: "npm:^3.1.5"
     slash: "npm:^3.0.0"
-  checksum: 10c0/9d9d87aefd5c66da569ce92af06790961ed317f18e452fac5bd8f49f750d44839575a5f7c87d278e9b81a24c8c020a6595f00d0c31b5b8c1ed08b02b8a6cc2af
+  checksum: 10c0/f3d41eacf786f4594932840ffa440d1cc6e5bc6ea6f9c06c1e15ff785803b83cf0e809985763bdf7f505baf08666d6d937885862e7318d79e4ed4d49bf03cb95
   languageName: node
   linkType: hard
 
@@ -827,13 +827,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"brace-expansion@npm:^1.1.7":
-  version: 1.1.14
-  resolution: "brace-expansion@npm:1.1.14"
+"brace-expansion@npm:^1.1.21":
+  version: 1.1.21
+  resolution: "brace-expansion@npm:1.1.21"
   dependencies:
     balanced-match: "npm:^1.0.0"
     concat-map: "npm:0.0.1"
-  checksum: 10c0/b6fdac832bc4e36a753658c9ed052c2e1a2be221763b002df25d1efbf7d21724334e726a6cd5eadc72a4b19ec3efb632d629cc003bc9c62f7af7a7915ffa4385
+  checksum: 10c0/8f0a68a720f9cb28c2ecaea5cdaf15fafd686d6b6e4e722a81c9d4bd2f68c1fd0619731cac05875d842221eaf4d97d564d329a12eb3c4c22137502fb3c65be8b
   languageName: node
   linkType: hard
 
@@ -1126,7 +1126,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "engineering-blog@workspace:."
   dependencies:
-    "@11ty/eleventy": "npm:3.1.7"
+    "@11ty/eleventy": "npm:3.1.8"
     "@tailwindcss/cli": "npm:4.3.4"
     "@tailwindcss/postcss": "npm:4.3.4"
     concurrently: "npm:10.0.6"
@@ -1161,7 +1161,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"entities@npm:^4.4.0":
+"entities@npm:^4.5.0":
   version: 4.5.0
   resolution: "entities@npm:4.5.0"
   checksum: 10c0/5b039739f7621f5d1ad996715e53d964035f75ad3b9a4d38c6b3804bb226e282ffeae2443624d8fdd9c47d8e926ae9ac009c54671243f0c3294c26af7cc85250
@@ -1747,12 +1747,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"linkify-it@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "linkify-it@npm:5.0.1"
+"linkify-it@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "linkify-it@npm:5.0.2"
   dependencies:
     uc.micro: "npm:^2.0.0"
-  checksum: 10c0/d06d04f1ed03be131740fc900a5e74ea1f49886b052213599e306d469d5ffe2303db76dd8f771de9f28e2b0b38852de22ec46ae597d245f8b66439b0ceb19b10
+  checksum: 10c0/dd70b1735a13d41a2cff0a058ac3771166038f23f6aff004dd53873cf985c64b107902fe0b544a5b3d1ff6e63249cf9c648fb3ae9f285481db48f56887adb0d6
   languageName: node
   linkType: hard
 
@@ -1832,19 +1832,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it@npm:^14.2.0":
-  version: 14.2.0
-  resolution: "markdown-it@npm:14.2.0"
+"markdown-it@npm:^14.3.3":
+  version: 14.3.3
+  resolution: "markdown-it@npm:14.3.3"
   dependencies:
     argparse: "npm:^2.0.1"
-    entities: "npm:^4.4.0"
-    linkify-it: "npm:^5.0.1"
+    entities: "npm:^4.5.0"
+    linkify-it: "npm:^5.0.2"
     mdurl: "npm:^2.0.0"
     punycode.js: "npm:^2.3.1"
     uc.micro: "npm:^2.1.0"
   bin:
     markdown-it: bin/markdown-it.mjs
-  checksum: 10c0/1d3a50061d2fe4efbcf317aac853dbee6892ed6f5a217570eead723f2ef2dd1c9baaeef5a687cd283480c45c2d20724a73e84a9ed72843cf7b3b719067af40ef
+  checksum: 10c0/d6075ad320731d7fb9f127e496677f4e36cbdba839d7387dabf1f0d07b5c02bdffb46fb3969033817c04e60017e05d4269e4aa74bee58cc0a562a17cc0b6b8ff
   languageName: node
   linkType: hard
 
@@ -1877,15 +1877,6 @@ __metadata:
   bin:
     mime: cli.js
   checksum: 10c0/402e792a8df1b2cc41cb77f0dcc46472b7944b7ec29cb5bbcd398624b6b97096728f1239766d3fdeb20551dd8d94738344c195a6ea10c4f906eb0356323b0531
-  languageName: node
-  linkType: hard
-
-"minimatch@npm:^3.1.5":
-  version: 3.1.5
-  resolution: "minimatch@npm:3.1.5"
-  dependencies:
-    brace-expansion: "npm:^1.1.7"
-  checksum: 10c0/2ecbdc0d33f07bddb0315a8b5afbcb761307a8778b48f0b312418ccbced99f104a2d17d8aca7573433c70e8ccd1c56823a441897a45e384ea76ef401a26ace70
   languageName: node
   linkType: hard
 
@@ -2107,21 +2098,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nunjucks@npm:@11ty/nunjucks@^3.3.0":
-  version: 3.3.0
-  resolution: "@11ty/nunjucks@npm:3.3.0"
+"nunjucks@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "nunjucks@npm:3.2.4"
   dependencies:
     a-sync-waterfall: "npm:^1.0.0"
     asap: "npm:^2.0.3"
     commander: "npm:^5.1.0"
   peerDependencies:
-    "@11ty/chokidar-with-glob-support": ^1.1.0
+    chokidar: ^3.3.0
   peerDependenciesMeta:
-    "@11ty/chokidar-with-glob-support":
+    chokidar:
       optional: true
   bin:
     nunjucks-precompile: bin/precompile
-  checksum: 10c0/5c9271c7eba3e9c69bb8385fd8380394b5e9f41215c871995bd64de4a46ef19a3662bac78b3c2a421eddc74a3cfe8231e896d2ac28457b467e32ed61881912d9
+  checksum: 10c0/7fe5197559b7c09972c79e2a86f9c093459b9075bc9b41134cd2bc599ae93567b53bd09d472a748edc736192d9ccd2998aa8c20cfcbe6a3fffd281f91897c888
   languageName: node
   linkType: hard
 
